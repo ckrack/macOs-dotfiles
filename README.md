@@ -43,6 +43,7 @@ brew install node yarn
 ### Backend dependencies
 
 ```bash
+brew tap homebrew/php
 brew install php71 composer phpunit php-code-sniffer pdepend php-cs-fixer phpcpd phpmd
 ```
 
@@ -55,12 +56,3 @@ ssh-keygen -t rsa
 ```
 
 **Never share your private key with anyone!**
-
-## App Suggestions
-
-- [Sublime Text](https://www.sublimetext.com/) Text editor
-- [Sourcetree](https://www.sourcetreeapp.com/) Git client
-- [Filezilla](https://filezilla-project.org/) SFTP client
-- [Sequel Pro](https://www.sequelpro.com/) SQL client
-- [iTerm2](https://www.iterm2.com/) Terminal client
-- [Postman](https://www.getpostman.com/) API client

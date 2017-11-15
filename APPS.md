@@ -52,5 +52,5 @@ mas install 411246225 436203431 412448059 803453959
 ```
 
 ```bash
-brew cask install java google-chrome chrome-devtools skype bitrix24 whatsapp iina ccleaner spectacle quicklook-csv quicklook-json qlmarkdown openoffice sublime-text sourcetree filezilla sequel-pro iterm2 postman sip xnconvert imageoptim gas-mask betterzipql qlimagesize qlcolorcode qlstephen suspicious-package qlvideo keka itsycal poedit gpg-suite
+brew cask install java google-chrome chrome-devtools skype bitrix24 whatsapp iina ccleaner spectacle quicklook-csv quicklook-json qlmarkdown openoffice sublime-text sourcetree filezilla sequel-pro iterm2 postman sip imageoptim gas-mask betterzipql qlimagesize qlcolorcode qlstephen suspicious-package qlvideo keka itsycal poedit gpg-suite
 ```
