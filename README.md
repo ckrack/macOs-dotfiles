@@ -22,7 +22,7 @@ Homebrew is the missing package manager for macOS.
 ### Install homebrew formulae
 
 ```bash
-brew install node yarn git git-flow bash bash-completion mas cask homebrew-bundle m-cli
+brew install git git-flow bash bash-completion mas cask homebrew-bundle m-cli
 ```
 
 Now make the homebrew installed bash your default
