@@ -1,0 +1,45 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
+	"detect_slow_plugins": false,
+	"draw_white_space": "selection",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".gitkeep",
+		"dump.rdb",
+		"*.min.css",
+		"*.min.js",
+		"*.map",
+		"*.sublime-workspace",
+		"*.sublime-project",
+		"composer.lock"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".sass-cache",
+		"coverage",
+		"log",
+		"tmp",
+		".tmp",
+		"node_modules",
+		".gulp"
+	],
+	"font_face": "Ubuntu Mono",
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"remember_open_files": false,
+	"save_on_focus_lost": true,
+	"show_encoding": true,
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
