@@ -8,6 +8,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Add cask tap
+brew tap caskroom/cask
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -40,6 +43,10 @@ brew install gnupg
 brew install grep
 brew install openssh
 brew install screen
+brew install mas
+brew install cask
+brew install m-cli
+
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -52,11 +59,20 @@ brew install woff2
 brew install ack
 brew install git
 brew install git-lfs
+brew install git-flow
 brew install lua
 brew install lynx
 brew install p7zip
 brew install rename
 brew install ssh-copy-id
+
+# Frontend
+brew install node
+brew install yarn
+
+# Backend
+brew tap homebrew/php
+brew install php71 composer phpunit php-code-sniffer pdepend php-cs-fixer phpcpd phpmd
 
 # Remove outdated versions from the cellar.
 brew cleanup
