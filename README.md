@@ -1,7 +1,7 @@
 # MacOS Setup
 
 This is my highly opinionated macOS Setup.
-It is structured into this general readme, [Apps](APPS.md), [Sublime](SUBLIME.md) and [Dotfiles](DOTFILES.md).
+It is structured into this general readme, [Apps](APPS.md), Sublime and Dotfiles.
 
 ## Install dependencies
 
@@ -19,40 +19,27 @@ Homebrew is the missing package manager for macOS.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Install homebrew formulae
+## Install homebrew formulae
 
 ```bash
-brew tap caskroom/cask
-brew install git git-flow bash bash-completion mas cask m-cli
+./brew.sh
 ```
 
-Now make the homebrew installed bash your default
+## Set sensible macOS defaults
 
 ```bash
-sudo -s
-echo /usr/local/bin/bash >> /etc/shells
-chsh -s /usr/local/bin/bash
+./.macos
 ```
 
-### Frontend tools
+## Install Apps
 
 ```bash
-brew install node yarn
+./mas.sh
+./cask.sh
 ```
 
-### Backend dependencies
+## Copy dotfiles
 
 ```bash
-brew tap homebrew/php
-brew install php71 composer phpunit php-code-sniffer pdepend php-cs-fixer phpcpd phpmd
+./bootstrap.sh
 ```
-
-## Generate SSH Key
-
-Follow the steps.
-
-```bash
-ssh-keygen -t rsa
-```
-
-**Never share your private key with anyone!**
