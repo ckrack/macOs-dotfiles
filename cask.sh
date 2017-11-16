@@ -59,5 +59,7 @@ brew cask install filezilla
 brew cask install sequel-pro
 brew cask install iterm2
 brew cask install postman
+brew cask install docker
+brew cask install docker-toolbox
 
 brew cask install java
