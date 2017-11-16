@@ -17,8 +17,8 @@ brew install coreutils
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`
+brew install findutils  --with-default-names
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
@@ -40,7 +40,7 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install grep
+brew install grep  --with-default-names
 brew install openssh
 brew install screen
 brew install mas
