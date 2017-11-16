@@ -14,7 +14,8 @@ brew cask install font-ubuntu-mono
 
 # Browser
 brew cask install google-chrome
-brew cask install chrome-devtools
+brew cask install firefox
+brew cask install torbrowser
 
 # Messenger
 brew cask install skype
