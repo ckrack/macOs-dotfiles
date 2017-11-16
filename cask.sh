@@ -25,11 +25,12 @@ brew cask install whatsapp
 # Media
 brew cask install iina
 brew cask install gimp
-brew cask install sip
 brew cask install imageoptim
+brew cask install fliqlo
 
 # Tools
 brew cask install ccleaner
+brew cask install dropbox
 brew cask install spectacle
 brew cask install gas-mask
 brew cask install keka
