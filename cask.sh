@@ -1,5 +1,10 @@
 # Install via cask
 
+# Add cask tap
+brew tap caskroom/cask
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Browser
 brew cask install google-chrome
 brew cask install chrome-devtools
