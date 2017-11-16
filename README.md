@@ -38,8 +38,17 @@ Homebrew is the missing package manager for macOS.
 ./cask.sh
 ```
 
-## Copy dotfiles
+## Copy & source dotfiles
 
 ```bash
 ./bootstrap.sh
+```
+
+## Setup SSH
+
+Copy your SSH-Key or generate a new one using `ssh-keygen -t rsa`.
+
+Add to macOS
+```bash
+ssh-add -k ~/.ssh/id_rsa
 ```
