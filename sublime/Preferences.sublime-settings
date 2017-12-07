@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Color Highlighter/themes/Twilight (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Twilight+ (SL).tmTheme",
 	"detect_slow_plugins": false,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -27,19 +27,35 @@
 		"node_modules",
 		".gulp"
 	],
-	"font_face": "Ubuntu Mono",
+	"font_face": "Source Code Pro",
+	"font_size": 12,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Markdown",
+		"PHP",
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"match_brackets_angle": true,
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
 	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
 	"show_encoding": true,
+	"spacegray_fileicons": true,
+	"spacegray_sidebar_font_normal": true,
+	"spacegray_sidebar_tree_small": true,
+	"spacegray_tabs_auto_width": true,
+	"spacegray_tabs_font_normal": true,
+	"spacegray_tabs_small": true,
 	"tab_size": 4,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Spacegray Oceanic.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

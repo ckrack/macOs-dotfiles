@@ -7,8 +7,8 @@
 	[
 		"Advanced CSV",
 		"Alignment",
-        "AutoFileName",
 		"ApacheConf.tmLanguage",
+		"AutoFileName",
 		"Babel",
 		"Babel Snippets",
 		"BracketHighlighter",
@@ -26,13 +26,13 @@
 		"LESS",
 		"M3U Syntax",
 		"MarkdownCodeBlockWrapper",
-        "MarkdownEditing",
+		"MarkdownEditing",
 		"MJML-syntax",
 		"Package Control",
 		"PHP Getters and Setters",
+		"php-grammar",
+		"php-snippets",
 		"PHP-Twig",
-        "php-grammar",
-        "php-snippets",
 		"Phpcs",
 		"Sass",
 		"SASS Snippets",
@@ -50,7 +50,9 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SyncedSideBar",
+		"SyncedSidebarBg",
 		"Theme - Spacegray",
+		"Twilight+",
 		"Xdebug Client"
 	]
 }
