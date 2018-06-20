@@ -8,8 +8,8 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
-alias p="cd ~/Dropbox/Projekte"
-alias clients="cd ~/Dropbox/Projekte/clients"
+alias p="cd ~/Projects"
+alias clients="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -20,6 +20,11 @@ alias o="open"
 alias oo="open ."
 
 alias hist='history | grep $1' #Requires one input
+
+# Docker aliases
+alias doup="docker-compose up -d"
+alias dodown="docker-compose down"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -47,8 +52,8 @@ alias sudo='sudo '
 # Gzip-enabled `curl`
 alias gurl="curl --compressed"
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; npm update npm -g; npm update -g; sudo gem update'
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages, Upgrade installed casks
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; npm update npm -g; npm update -g; sudo gem update; brew cask upgrade; mas upgrade'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -117,16 +122,6 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-    alias "$method"="lwp-request -m '$method'"
-done
-
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
 # Open a manpage in Preview, which can be saved to PDF
 function pman {
    man -t "${1}" | open -f -a /Applications/Preview.app
@@ -134,12 +129,4 @@ function pman {
 if [[ "$OSTYPE" == "darwin"* ]]; then
     alias man="pman"
 fi
-
-alias kd="cd /opt/kDeploy/tools"
-alias ks="cd /opt/kServer"
-
-alias varnishon='iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 6081;iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 6081 -j REDIRECT --to-ports 80'
-alias varnishoff='iptables -t nat -D PREROUTING -i eth0 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 6081;iptables -t nat -D PREROUTING -i eth0 -p tcp -m tcp --dport 6081 -j REDIRECT --to-ports 80'
-alias varnishstatus='iptables -L -t nat |grep -q 6081; if [ "test$?" = "test0" ]; then echo "Varnish On"; else echo "Varnish Off"; fi'
-
 
