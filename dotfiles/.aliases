@@ -24,7 +24,11 @@ alias hist='history | grep $1' #Requires one input
 # Docker aliases
 alias doup="docker-compose up -d"
 alias dodown="docker-compose down"
-
+# open bash on the docker container containing the first param in the name
+function dobash {
+	# e.g: dobash nginx
+	docker exec -it $(docker ps --format "{{.Names}}" | grep "${1}") bash
+}
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
