@@ -30,6 +30,9 @@ function dobash {
 	docker exec -it $(docker ps --format "{{.Names}}" | grep "${1}") bash
 }
 
+# Symfony Console alias
+alias sf="php bin/console"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
