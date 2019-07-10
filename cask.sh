@@ -10,12 +10,10 @@ brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-fira-code
 brew cask install font-source-code-pro
-brew cask install font-ubuntu-mono
 
 # Browser
 brew cask install google-chrome
 brew cask install firefox
-brew cask install torbrowser
 
 # Messenger
 brew cask install skype
