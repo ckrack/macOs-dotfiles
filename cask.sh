@@ -30,7 +30,6 @@ brew cask install fliqlo
 
 # Tools
 brew cask install ccleaner
-brew cask install dropbox
 brew cask install spectacle
 brew cask install gas-mask
 brew cask install keka
@@ -61,5 +60,6 @@ brew cask install iterm2
 brew cask install postman
 brew cask install docker
 brew cask install docker-toolbox
+brew cask install visual-studio-code
 
 brew cask install java
